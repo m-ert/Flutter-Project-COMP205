@@ -68,6 +68,18 @@ const dishPageArrow = Icon(
   size: 30.0,
 );
 
+final kHintTextStyle = TextStyle(
+  color: Colors.black,
+  fontFamily: 'OpenSans',
+);
+
+final kLabelStyle = TextStyle(
+  color: Colors.black,
+  fontWeight: FontWeight.bold,
+  fontFamily: 'OpenSans',
+);
+
+
 //    ALL PRICES:
 const double artichokePrice = 16.00;
 const double pigsPrice = 16.00;
