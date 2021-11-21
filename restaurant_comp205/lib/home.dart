@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restaurant/screens/login.dart';
+import 'package:login.dart';
+import 'package:menu/menu.dart';
 
 
 
@@ -102,7 +103,12 @@ class _HomeState extends State<Home> {
                       Icons.chevron_right,
                       size: 60.0,
                     ),
-                    onTap: () {},
+                    onTap: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Menu()),
+                    );
+                    },
                   ),
                 ),
               ),
