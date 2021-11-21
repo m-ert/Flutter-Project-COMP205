@@ -164,6 +164,10 @@ class _HomeState extends State<Home> {
   void onSelected(BuildContext context, int item){
     switch (item){
       case 0:
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Preparation()),
+        );
         break;
       case 1:
         Navigator.push(
