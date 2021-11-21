@@ -103,12 +103,7 @@ class _HomeState extends State<Home> {
                       Icons.chevron_right,
                       size: 60.0,
                     ),
-                    onTap: () {
-                    Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Menu()),
-                    );
-                    },
+                    onTap: () {},
                   ),
                 ),
               ),
@@ -139,7 +134,12 @@ class _HomeState extends State<Home> {
                       Icons.chevron_right,
                       size: 60.0,
                     ),
-                    onTap: () {},
+                    onTap: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Menu()),
+                    );
+                    },
                   ),
                 ),
               ),
