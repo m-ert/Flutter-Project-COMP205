@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MaterialApp(
-    home: FirstRoute(),
-  ));
-}
-class FirstRoute extends StatelessWidget {
-  const FirstRoute({Key? key}) : super(key: key);
+class CartPage extends StatelessWidget {
+  const CartPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -160,7 +155,7 @@ class FirstRoute extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const SecondRoute()),
+                      MaterialPageRoute(builder: (context) => const PaymentPage()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
@@ -170,8 +165,8 @@ class FirstRoute extends StatelessWidget {
           ],),),);}
 }
 
-class SecondRoute extends StatelessWidget {
-  const SecondRoute({Key? key}) : super(key: key);
+class PaymentPage extends StatelessWidget {
+  const PaymentPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -332,21 +327,8 @@ class SecondRoute extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const ThirdRoute()),
+                  MaterialPageRoute(builder: (context) => const Preparation()),
                 );},
             ),],),
       ),);
   }}
-class ThirdRoute extends StatelessWidget {
-  const ThirdRoute({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-      appBar: AppBar(
-      ),
-
-    );
-  }
-}
