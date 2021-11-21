@@ -177,7 +177,13 @@ class _AddressScreenState extends State<AddressScreen> {
                           children: <Widget>[
                             SizedBox(height: 50),
                             new RaisedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Menu()),
+                                );
+                              },
                               child: Padding(
                                 padding: EdgeInsets.all(1),
                                 child: IconButton(
