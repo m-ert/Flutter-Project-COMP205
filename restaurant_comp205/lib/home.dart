@@ -72,7 +72,13 @@ class _HomeState extends State<Home> {
                       Icons.chevron_right,
                       size: 60.0,
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Reservation()),
+                      );
+                    },
                   ),
                 ),
               ),
@@ -103,7 +109,12 @@ class _HomeState extends State<Home> {
                       Icons.chevron_right,
                       size: 60.0,
                     ),
-                    onTap: () {},
+                    onTap: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Menu()),
+                    );
+                    },
                   ),
                 ),
               ),
@@ -135,10 +146,11 @@ class _HomeState extends State<Home> {
                       size: 60.0,
                     ),
                     onTap: () {
-                    Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Menu()),
-                    );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const AddressScreen()),
+                      );
                     },
                   ),
                 ),
